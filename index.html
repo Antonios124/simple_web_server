@@ -1,11 +1,83 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Простой веб-сервер</title>
-    </head>
-    <body>
-        <h1>Добро пожаловать на мой веб-сервер!</h1>
-        <p>Это простой веб-сервер, созданный с помощью Python.</p>
-    </body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красивая страница без CSS</title>
+</head>
+<body>
+
+    <!-- Заголовок -->
+    <center>
+        <h1>Добро пожаловать на мою страницу!</h1>
+        <h2>Это пример красивой HTML-страницы без CSS</h2>
+    </center>
+
+    <!-- Навигационное меню -->
+    <hr>
+    <center>
+        <a href="#about">Обо мне</a> &nbsp;&nbsp;
+        <a href="#services">Услуги</a> &nbsp;&nbsp;
+        <a href="#contact">Контакты</a>
+    </center>
+    <hr>
+
+    <!-- Секция "Обо мне" -->
+    <a name="about"></a>
+    <h2 align="center">Обо мне</h2>
+    <p align="justify">
+        Привет! Меня зовут Иван, и я являюсь разработчиком веб-сайтов. Я создаю сайты с нуля, используя только HTML и JavaScript.
+        Мне нравится создавать простые, но функциональные решения для бизнеса и личных проектов.
+    </p>
+
+    <!-- Секция "Услуги" -->
+    <a name="services"></a>
+    <h2 align="center">Мои услуги</h2>
+    <table border="1" cellpadding="10" cellspacing="0" align="center" width="80%">
+        <tr>
+            <th>Название услуги</th>
+            <th>Описание</th>
+            <th>Цена</th>
+        </tr>
+        <tr>
+            <td>Создание сайта</td>
+            <td>Разработка простых сайтов для вашего бизнеса</td>
+            <td>5000 руб.</td>
+        </tr>
+        <tr>
+            <td>Поддержка сайта</td>
+            <td>Ежемесячное обслуживание и обновление контента</td>
+            <td>2000 руб./мес.</td>
+        </tr>
+        <tr>
+            <td>SEO-оптимизация</td>
+            <td>Улучшение видимости вашего сайта в поисковых системах</td>
+            <td>3000 руб./мес.</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Секция "Контакты" -->
+    <a name="contact"></a>
+    <h2 align="center">Контакты</h2>
+    <form align="center">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Ваш email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="message">Сообщение:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+
+    <!-- Подвал -->
+    <hr>
+    <footer align="center">
+        <p>&copy; 2023 Моя компания. Все права защищены.</p>
+    </footer>
+
+</body>
 </html>
